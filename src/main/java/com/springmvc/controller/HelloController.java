@@ -12,9 +12,7 @@ public class HelloController {
 		
 	    @RequestMapping(value="/mvc",method=RequestMethod.GET)  
 	    public String HelloWorld(Model model){  
-		  
-	        model.addAttribute("message","Hello Spring MVC!!!");  
-	       
+	        model.addAttribute("message","Hello Spring MVC....");  
 	        return "HelloWorld";  
 	    }  
 }
