@@ -9,5 +9,6 @@
 <body>  
 <h1>message:${message}</h1>  
 <h1>this is my spring mvc</h1>  
+<h1>Cookie userName:${userName}</h1>  
 </body>  
 </html> 
