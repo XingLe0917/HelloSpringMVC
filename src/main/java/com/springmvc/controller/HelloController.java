@@ -24,7 +24,7 @@ public class HelloController {
 	    public String cookie(HttpServletRequest request, 
                 HttpServletResponse response,Model model){  
 	        model.addAttribute("message","Hello Spring MVC.");  
-//	        response.addCookie(new Cookie("userName", "xingle")); 
+	        response.addCookie(new Cookie("userName", "xingle")); 
 	        Cookie[] cookies = request.getCookies(); 
 	        if (cookies != null) { 
 	            for (Cookie cookie : cookies) { 

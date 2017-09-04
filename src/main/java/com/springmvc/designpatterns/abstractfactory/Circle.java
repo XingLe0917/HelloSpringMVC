@@ -2,8 +2,8 @@ package com.springmvc.designpatterns.abstractfactory;
 
 public class Circle implements IShape{
 
-	@Override
 	public void draw() {
+		// TODO Auto-generated method stub
 		System.out.println("Circle 的 draw() 方法");
 	}
 
