@@ -1,7 +1,7 @@
 package initialization;
 
 //initialization/InitTest17.java
-//TIJ5 Chapter Initialization, Exercise 17, page 101
+//TIJ5 Chapter Initialization, Exercise 17, Exercise 18，page 101
 /* 
  * 创建一个类，它有一个接受String参数的构造器。
  * 在构造阶段，打印该参数。
@@ -18,6 +18,9 @@ class InitTest{
 public class InitTest17 {
 
 	public static void main(String[] args){
-		InitTest[] it = new InitTest[10];
+		InitTest[] it = new InitTest[5];
+		//Exercise 18，通过创建对象赋值给引用数组
+		for(int i = 0; i < it.length; i++)
+			it[i] = new InitTest(Integer.toString(i));
 	}
 }
