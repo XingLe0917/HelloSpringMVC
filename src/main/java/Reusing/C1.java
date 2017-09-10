@@ -12,9 +12,9 @@ class A1 { A1() {System.out.println("A1()");} }
 
 class B1 extends A1 { B1(){ System.out.println("B1()"); } }
 
-public class C extends A1{
+public class C1 extends A1{
 	B1 b = new B1();
 	public static void main(String[] args){
-		C c = new C();
+		C1 c = new C1();
 	}
 }
