@@ -1,0 +1,9 @@
+package tool;
+
+public class Print {
+	
+	public static void println(Object o){
+		System.out.println(o);
+	}
+
+}
