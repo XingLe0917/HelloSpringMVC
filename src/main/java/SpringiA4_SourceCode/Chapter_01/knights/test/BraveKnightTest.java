@@ -15,3 +15,4 @@ public class BraveKnightTest {
 		verify(mockQuest, times(1)).embark();
 	}
 }
+
