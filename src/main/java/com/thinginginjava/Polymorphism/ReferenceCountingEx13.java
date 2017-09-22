@@ -19,6 +19,8 @@ class Shared {
 		}
 	}
 	public String toString() { return "Shared "+id;}
+	//Exercise 14中用到showRefcount
+	public void showRefcount() { System.out.println("refcount = " + refcount); }	
 	protected void finalize() {
 		if(refcount > 0)
 			System.out.println("Error: " + refcount + " Shared " + id + " objects in use");
