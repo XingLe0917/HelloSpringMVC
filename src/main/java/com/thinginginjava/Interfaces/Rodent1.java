@@ -5,8 +5,6 @@
 */
 package com.thinginginjava.Interfaces;
 
-import java.awt.Robot;
-
 abstract class Rodent {
 	private String name = "Rodent";
 	abstract protected void eat(); 
