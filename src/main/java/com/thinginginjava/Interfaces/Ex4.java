@@ -4,7 +4,7 @@
  * 创建一个静态方法，它可以接受指向基类的引用，将其向下转型到导出类，然后再调用该静态方法。
  * 在main()中，展现它的运行情况。然后，为基类中的方法加上 abstract 声明，这样就不再需要进行向下转型。
 */ 
-package com.thinginginjava.Interfaces;
+package com.thinginginjava.interfaces;
 
 //创建一个不包括任何方法的抽象类
 abstract class Dad1 {}

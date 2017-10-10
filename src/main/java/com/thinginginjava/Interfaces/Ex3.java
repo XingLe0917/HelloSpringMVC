@@ -5,7 +5,7 @@
  * 在定义该变量之处，赋予它非零值。在基类的构造器中调用这个方法。
  * 现在，在main()方法中，创建一个导出类对象，然后调用它print()方法。请解释发生的情形。
 */ 
-package com.thinginginjava.Interfaces;
+package com.thinginginjava.interfaces;
 
 abstract class Dad {
 	protected abstract void print();
