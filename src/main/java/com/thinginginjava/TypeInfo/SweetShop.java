@@ -28,6 +28,7 @@ public class SweetShop {
     new Candy();
     System.out.println("After creating Candy");
     try {
+      //Class.forName 是取得Class对象的引用的一种方法
       Class c = Class.forName("com.thinginginjava.TypeInfo.Gum");
       System.out.println(
           "Class name :" + c.getName() + " is interface ?" + c.isInterface() + ",Simple name :" + c
@@ -37,7 +38,7 @@ public class SweetShop {
     }
     System.out.println("After Class.forName(\"Gum\")");
     new Cookie();
-    System.out.println("After creating Cookie  ");
+    System.out.println("After creating Cookie");
   }
 
 
