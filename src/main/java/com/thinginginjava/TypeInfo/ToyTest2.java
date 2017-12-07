@@ -1,9 +1,11 @@
 package com.thinginginjava.TypeInfo;
+//TypeInfo/ToyTest2.java
+// TIJ4 Chapter Typeinfo, Exercise 1, page 318
 
-/**
- * Created by xingle on 2017/12/6
- */
-public class ToyTest {
+/* 将新的interface加入到ToyTest.java中，
+  看看这个程序是否能够正确检测出来并加以显示。
+*/
+public class ToyTest2 {
   static void printInfo(Class c){
     System.out.println("Class name:"+c.getName()+" is interface ?" +c.isInterface() );
     System.out.println("Simple name:"+c.getSimpleName());
@@ -13,22 +15,20 @@ public class ToyTest {
   public static void main(String[] args){
     Class c = null;
     try {
-      c = Class.forName("com.thinginginjava.TypeInfo.FancyToy");
+      c = Class.forName("com.thinginginjava.TypeInfo.FancyToy2");
     } catch (ClassNotFoundException e) {
       System.out.println("Can't find FancyToy");
       System.exit(1);
     }
     printInfo(c);
-    for(Class face : c.getInterfaces()){//Class.getInterfaces()放回的是Class对象，表示在感兴趣的Class对象中所包含的接口
+    for(Class face : c.getInterfaces()){
       printInfo(face);
     }
-    Class up = c.getSuperclass();//getSuperclass()查询直接基类
+    Class up = c.getSuperclass();
     Object obj = null;
     try {
       //需要默认的构造器
       obj = up.newInstance();
-      //Class的newInstance()是实现"虚拟构造器"的一种途径，虚拟构造器允许你声明：
-      //"我不知道你的确切类型，但是无论如何要正确地创建你自己"
     } catch (InstantiationException e) {
       System.out.println("Cannot instatiate");
     } catch (IllegalAccessException e) {
@@ -37,21 +37,18 @@ public class ToyTest {
     System.out.println("--------------------------------");
     printInfo(obj.getClass());
   }
-
 }
 
-
-class Toy{
-  Toy(){ }
-  Toy(int i){}
+class Toy2{
+  Toy2(){ }
+  Toy2(int i){}
 }
 
-interface HasBatteries{}
-interface Waterproof{}
-interface Shoots{}
+interface HasBatteries2{}
+interface Waterproof2{}
+interface Shoots2{}
+interface Flies {} //加入的新接口
 
-class FancyToy extends Toy implements HasBatteries,Waterproof,Shoots{
-  FancyToy(){super(1);}
+class FancyToy2 extends Toy implements HasBatteries2,Waterproof2,Shoots2,Flies{
+  FancyToy2(){super(1);}
 }
-
-
