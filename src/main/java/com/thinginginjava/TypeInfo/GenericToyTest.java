@@ -22,5 +22,4 @@ public class GenericToyTest {
     Object obj = ftClass.getSuperclass();
   }
 
-
 }

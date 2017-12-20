@@ -43,7 +43,9 @@ public class ToyTest {
 
 class Toy{
   Toy(){ }
-  Toy(int i){}
+  Toy(int i){
+    System.out.println("Creating Toy(" + i + ") object");
+  }
 }
 
 interface HasBatteries{}
